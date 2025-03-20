@@ -9,6 +9,10 @@ async function startServer() {
   await bootstrap(app);
 }
 
+/**
+ * Clustering to improve performance
+ * https://www.digitalocean.com/community/tutorials/how-to-scale-node-js-applications-with-clustering
+ */
 // TODO: fix this
 const cluster = notReallyCluster as unknown as notReallyCluster.Cluster;
 
